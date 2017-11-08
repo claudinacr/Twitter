@@ -36,6 +36,8 @@ function aumentoHeight() {
 }
 
 function contadorCambio() {
+
+    aumentoHeight();
     var cuenta = 140 - textArea.value.length;
 
     if (cuenta < 0) {
