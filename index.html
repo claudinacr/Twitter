@@ -39,40 +39,63 @@
         </ul>
     </header>
 
-    <!-- Estructura de presentación del programador -->
-    <section class="developer">
-        <div>
-            <img src="assets/img/user.png">
+    <!-- Estructura de presentación del programador y Tweets -->
+    <section class="bio_tweets">
+        <div class="developer">
+            <div>
+                <img src="assets/img/user.png">
+            </div>
+
+            <div class="datosCoders">
+                <p>Claudina Cortez R.</p>
+                <p>@claudinacr</p>
+            </div>
+
+            <div class="datos">
+                <li>
+                    <a href="#">Tweets
+                        <br>
+                        <p>672</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Siguiendo
+                        <br>
+                        <p>672</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Seguidores
+                        <br>
+                        <p>672</p>
+                    </a>
+                </li>
+            </div>
         </div>
 
-        <div class="datosCoders">
-            <p>Claudina Cortez R.</p>
-            <p>@claudinacr</p>
+
+        <div class="form">
+            <textarea type="text" id="mensaje" autocomplete="off"></textarea>
+            <hr>
+            <div class="controles">
+                <p id="contador">140</p>
+
+                <button type="button" name="Send" id="botonSend">Twittear</button>
+
+            </div>
+
         </div>
 
-        <div class="datos">
-            <li>
-                <a href="#">Tweets
-                    <br>
-                    <p>672</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">Siguiendo
-                    <br>
-                    <p>672</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">Seguidores
-                    <br>
-                    <p>672</p>
-                </a>
-            </li>
-        </div>
+    </section>
+
+
+    <section class="sent_messages">
+
+
     </section>
 
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/moment.js"></script>
 </body>
 
 </html>

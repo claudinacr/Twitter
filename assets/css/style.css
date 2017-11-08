@@ -34,13 +34,13 @@ ul {
 }
 
 .twitter li:hover {
-    color: rgba(85, 172, 238, 1);
+    color:#519FF2;
 }
 
 .twitter_bird {
     margin-left: auto;
     margin-right: auto;
-    color: rgba(85, 172, 238, 1);
+    color: #519FF2;
     font-size: 1.3em;
 }
 
@@ -55,7 +55,7 @@ ul {
 .twitter li>button {
     font-size: 0.8em;
     border: 0;
-    background: rgba(85, 172, 238, 1);
+    background: #519FF2;
     color: #fff;
     border-radius: 100px;
 }
@@ -63,19 +63,37 @@ ul {
     max-width: 32px;
     max-height: 32px;
 }
-/*Seccion de Developer Bio*/
+
+
+/*Sección Developer & Tweets*/
+
+.bio_tweets{
+    display: flex;
+    align-items:stretch;
+    padding-top: 1em;
+    padding-left: 3em;
+    padding-right: 3em; 
+}
+    /*Seccion de Developer Bio*/
 .developer {
     background-color: #FFFFFF;
     width: 15em;
     height: 20em;
-    margin-top: 3em;
-    margin-left: 5em;
+    border-radius: 3%;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(117, 117, 117, 1);
+    box-shadow: 3px 3px 5px 0px rgba(117, 117, 117, 1);
+    z-index: 100;
 }
 
 .developer div:first-child {
-    background-color: #00BCD6;
+    background-color: #519FF2;
     width: 100%;
     height: 45%;
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+    background-image: linear-gradient(#519FF2,#ffffff);
+    
     /* border: 1px blue solid; */
 }
 
@@ -84,6 +102,7 @@ ul {
     top: 70%;
     left: 2%;
     border: 10% white solid;
+    border-radius: 50%;
     /* border: 1px blue solid; */
 }
 
@@ -112,6 +131,99 @@ ul {
 }
 
 .datos li a p {
-    color: #00BCD6;
+    color: #519FF2;
 }
 
+    /* Seccion Formulario de Tweets*/
+
+.form {
+    display: flex;
+    flex: 0 0 45%;
+    align-items: stretch;
+    max-height: 100%;
+    margin-left: 3em;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(117, 117, 117, 1);
+    box-shadow: 3px 3px 5px 0px rgba(117, 117, 117, 1);
+    padding: 1em;
+    flex-direction: column;
+}
+
+textarea {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 26px;
+    font-weight: bold;
+    resize: none;
+    border: none;
+    outline: none;
+    overflow-y: hidden;
+    transition: height 0.6s ease-in;
+    border-radius: 5px;
+    border: 2px #6AD2F3 solid;
+    height: 20%;
+    max-height: 30%;
+    margin-bottom: 1em;
+}
+
+hr {
+    margin-bottom: 1em;
+    border-color: gray;
+}
+
+
+.controles {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top : auto;
+    margin-bottom: 2em;
+}
+
+.controles button {
+    margin-left: auto;
+    width: 90px;
+    height: 40px;
+    background-color: #519FF2;
+    border-radius: 20px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+}
+
+.controles button:disabled {
+    opacity: 0.5;
+}
+
+.controles p{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0759A5;
+}
+
+.sent_messages {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 2em;
+    margin-top: 3%;
+    /* border: 1px brown solid; */
+}
+
+.tweet {
+    background-color: #FFFFFF;
+    color: #000000;
+    max-width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 1.5em;
+    color: rgba(117, 117, 117, 1);
+    word-wrap: break-word;
+    font-family: 'Anonymous Pro', monospace;
+}
