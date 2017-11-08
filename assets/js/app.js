@@ -14,6 +14,10 @@ function sendTweet() {
         var tweet = document.createElement('div');
         tweet.className = 'tweet';
         var tweetText = document.createTextNode(mensaje);
+
+        var fecha = document.createTextNode(moment().format('MMMM Do YYYY, h:mm:ss a') + ":");
+       
+        tweet.appendChild(fecha);
         tweet.appendChild(tweetText);
         cajaTweet.appendChild(tweet);
     }
