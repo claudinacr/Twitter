@@ -31,10 +31,22 @@ var contador = document.getElementById('contador');
 var hr = document.querySelector('hr');
 
 function contadorCambio() {
+
     var cuenta = 140 - textArea.value.length;
+
+    if (cuenta < 0) {
+        contador.style.color = 'red'
+    } else if (cuenta > 20) {
+        contador.style.color = '#0759A5'
+    } else if (cuenta <= 20 && cuenta > 10) {
+        contador.style.color = '#26A535';
+    } else if (cuenta <= 10) {
+        contador.style.color = '#E5317D';
+    }
+
     contador.innerHTML = cuenta;
 
-    if (textArea.value.length == 0) {
+    if (textArea.value.length == 0 || textArea.value.length > 140) {
         botonSend.disabled = true;
         hr.style.borderColor = 'gray';
     } else {
