@@ -1,0 +1,65 @@
+html{
+    margin:0;
+    
+}
+body{
+    background-color: #E5EBF0;
+}
+
+/*Estilos de la barra de navegacion*/
+
+header {
+    width: 100%;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.twitter {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px -20px rgba(85, 172, 238, 1);
+    color: rgba(117, 117, 117, 1);
+    background-color: #ffffff;
+}
+
+.twitter li {
+    cursor: pointer;
+}
+
+.twitter li:hover {
+    color: rgba(85, 172, 238, 1);
+}
+
+.twitter_bird {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(85, 172, 238, 1);
+    font-size: 1.3em;
+}
+
+.twitter li:not(:last-child):not(.twitter_bird) {
+    margin-right: 10px;
+}
+
+.twitter li i:not(.fa-twitter):not(.fa-search):not(.user) {
+    margin-right: 3px;
+}
+
+.twitter li>button {
+    font-size: 0.8em;
+    border: 0;
+    background: rgba(85, 172, 238, 1);
+    color: #fff;
+    border-radius: 100px;
+}
+.user{
+    max-width: 32px;
+    max-height: 32px;
+}
