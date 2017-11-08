@@ -30,8 +30,12 @@ var textArea = document.getElementById('mensaje');
 var contador = document.getElementById('contador');
 var hr = document.querySelector('hr');
 
-function contadorCambio() {
+function aumentoHeight() {
+    textArea.style.height = 'auto';
+    textArea.style.height = (textArea.scrollHeight) + 'px';
+}
 
+function contadorCambio() {
     var cuenta = 140 - textArea.value.length;
 
     if (cuenta < 0) {
@@ -56,3 +60,16 @@ function contadorCambio() {
 }
 textArea.onfocus = contadorCambio;
 textArea.oninput = contadorCambio;
+
+textArea.onkeyup = function (evt) {
+    evt = evt || window.event;
+
+    if (evt.keyCode == 13) {
+        var rows = parseInt(textArea.getAttribute("rows"));
+
+        rows += 1;
+
+        textArea.setAttribute("rows", toString(rows));
+        aumentoHeight();
+    }
+};
