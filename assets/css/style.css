@@ -1,4 +1,4 @@
-html{
+*{
     margin:0;
     
 }
@@ -63,3 +63,55 @@ ul {
     max-width: 32px;
     max-height: 32px;
 }
+/*Seccion de Developer Bio*/
+.developer {
+    background-color: #FFFFFF;
+    width: 15em;
+    height: 20em;
+    margin-top: 3em;
+    margin-left: 5em;
+}
+
+.developer div:first-child {
+    background-color: #00BCD6;
+    width: 100%;
+    height: 45%;
+    /* border: 1px blue solid; */
+}
+
+.developer div img {
+    position: relative;
+    top: 70%;
+    left: 2%;
+    border: 10% white solid;
+    /* border: 1px blue solid; */
+}
+
+.datosCoders {
+    position: relative;
+    left: 30%;
+    top: 2%;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.datosCoders p:nth-child(2) {
+    color: gray;
+}
+
+.datos li {
+    float: left;
+    list-style: none;
+    margin: 5%;
+}
+
+.datos li a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.datos li a p {
+    color: #00BCD6;
+}
+
